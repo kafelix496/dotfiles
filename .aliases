@@ -11,15 +11,21 @@ alias c='clear'
 alias tks='t kill-session -t '
 ### aws SSO Login
 alias ssol='aws sso login --profile '
+### Vim Wiki Open
+alias vwo='cd ~/vimwiki && v index.md'
 
 
-# Shell
-### Shell read Command Open
-alias sco='v ~/dotfiles/.profile'
-### Shell Alias Open
-alias sao='v ~/dotfiles/.aliases'
-### Bash Reload read command
-alias sr='source ~/.zshrc'
+# Config
+### Config folder Open
+alias co='cd ~/dotfiles && v'
+### Config shell read Command Open
+alias cco='v ~/dotfiles/.profile'
+### Config Alias Open
+alias cao='v ~/dotfiles/.aliases'
+### Config neoVim Open
+alias cvo='cd ~/dotfiles/.nvim && v'
+### Config shell ReLoad read command
+alias crl='source ~/.zshrc'
 
 
 # Git
