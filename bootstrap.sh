@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function installPackages() {
-  # Install command-line tools using Homebrew.
+  # Install Homebrew.
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   # Make sure we’re using the latest Homebrew.
@@ -9,6 +9,9 @@ function installPackages() {
 
   # Upgrade any already-installed formulae.
   brew upgrade
+
+  # Install powerlevel10k
+  brew install powerlevel10k
 
   # Install alacritty
   brew install --cask --no-quarantine alacritty
@@ -47,6 +50,7 @@ function doIt() {
   ln -s ~/dotfiles/.tmux.conf ~/.config/tmux/tmux.conf
   ln -s ~/dotfiles/.alacritty.toml ~/.config/alacritty/alacritty.toml
   ln -s ~/dotfiles/.nvim ~/.config/nvim
+  ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
   ln -s ~/dotfiles/.aliases ~/.aliases
   ln -s ~/dotfiles/.exports ~/.exports
   ln -s ~/dotfiles/.profile ~/.zshrc
