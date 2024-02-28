@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+# General
+### neoVim
+alias v='nvim'
+### Tmux
+alias t='tmux'
+### Clear
+alias c='clear'
+### Tmux Kill Session
+alias tks='t kill-session -t '
+### aws SSO Login
+alias ssol='aws sso login --profile '
+
+
+# Shell
+### Shell read Command Open
+alias sco='v ~/dotfiles/.profile'
+### Shell Alias Open
+alias sao='v ~/dotfiles/.aliases'
+### Bash Reload read command
+alias sr='source ~/.zshrc'
+
+
+# Git
+### Git Remote Prune Origin
+alias grpo='git remote prune origin'
+
+
+# Python
+### Python Create Virtual environment folder
+alias pcv='python3 -m venv .venv'
+### AcTivate Virtual environment
+alias atv='source .venv/bin/activate'
+### DeAcTivate Virtual environment
+alias dat='deactivate'
+### Poetry Install
+alias pi='poetry install'
+
+
+# Coding For Fun
+## Change directory
+### change directory to Coding for Fun
+alias cf="cd ~/Code/personal/coding-for-fun-org"
+### change directory to frontend
+alias fe="cd frontend"
+
+
+# Keen Decision System
+## AWS
+### Keen SSO
+alias ksso='ssol jiyeol.lee'
+
+## Change directory
+### Keen WEB-mida directory
+alias kweb='cd ~/Code/keends/web-mida'
+
+## Shell script
+### Keen Start all backend Server
+alias kss='~/Code/keends/start_server.sh'
+### Keen Terminate all backend Server
+alias kts='~/Code/keends/terminate_server.sh'
