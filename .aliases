@@ -13,6 +13,8 @@ alias tks='t kill-session -t '
 alias ssol='aws sso login --profile '
 ### Vim Wiki Open
 alias vwo='cd ~/vimwiki && v index.md'
+### go to previous directory
+alias ..='cd ..'
 
 
 # Config
