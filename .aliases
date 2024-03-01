@@ -39,7 +39,7 @@ alias pcv='python3 -m venv .venv'
 ### AcTivate Virtual environment
 alias atv='source .venv/bin/activate'
 ### DeAcTivate Virtual environment
-alias dat='deactivate'
+alias datv='deactivate'
 ### Poetry Install
 alias pi='poetry install'
 
