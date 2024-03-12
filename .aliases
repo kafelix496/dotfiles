@@ -30,6 +30,15 @@ alias cvo='cd ~/dotfiles/.nvim && v'
 alias crl='source ~/.zshrc'
 
 
+# Colima
+### ColimA Start
+alias cas='colima start --cpu 4 --memory 8'
+### ColimA Start With Kubernetes
+alias caswk='colima start --cpu 4 --memory 8'
+### ColimA Terminate
+alias cat='colima stop'
+
+
 # Git
 ### Git Remote Prune Origin
 alias grpo='git remote prune origin'
