@@ -31,7 +31,7 @@ function installPackages() {
   brew install colima
 
   # Install nodejs
-  brew install nodejs
+  brew install nodejs@18
 
   # Install go
   brew install go
