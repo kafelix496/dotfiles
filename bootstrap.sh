@@ -27,8 +27,14 @@ function installPackages() {
   # ref: https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package
   brew install neovim
 
+  # Install colima
+  brew install colima
+
   # Install nodejs
   brew install nodejs
+
+  # Install go
+  brew install go
 
   # Install fonts for 'Hack Nerd Front Mono'
   brew tap homebrew/cask-fonts
@@ -39,6 +45,9 @@ function installPackages() {
 
   # Install lazygit
   brew install lazygit
+
+  # Install gnu sed
+  brew install gnu-sed
 }
 
 function doIt() {
