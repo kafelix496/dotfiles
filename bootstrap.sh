@@ -54,11 +54,17 @@ function installPackages() {
 }
 
 function doIt() {
+  # Create config directories
   mkdir -p ~/.config/alacritty
   mkdir -p ~/.config/tmux
 
   installPackages;
 
+  # Configure git
+  git config --global user.name "Jiyeol Lee"
+  git config --global user.email "ka.felix496@gmail.com"
+
+  # Create symbolic links
   ln -s ~/dotfiles/.tmux.conf ~/.config/tmux/tmux.conf
   ln -s ~/dotfiles/.alacritty.toml ~/.config/alacritty/alacritty.toml
   ln -s ~/dotfiles/.nvim ~/.config/nvim
