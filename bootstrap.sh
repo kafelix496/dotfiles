@@ -33,6 +33,9 @@ function installPackages() {
   # Install nodejs
   brew install nodejs@18
 
+  # Install yarn -- must be installed after nodejs
+  brew install yarn
+
   # Install go
   brew install go
 
