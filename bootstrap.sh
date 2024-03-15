@@ -51,6 +51,9 @@ function installPackages() {
 
   # Install gnu sed
   brew install gnu-sed
+
+  # Install KeePassXC
+  brew install --cask keepassxc
 }
 
 function doIt() {
