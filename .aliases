@@ -42,6 +42,7 @@ alias cat='colima stop'
 # Git
 ### Git Remote Prune Origin
 alias grpo='git remote prune origin'
+alias gsu='gh auth switch && gh auth setup-git'
 
 
 # Python
