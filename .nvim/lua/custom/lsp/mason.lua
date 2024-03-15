@@ -125,8 +125,11 @@ local function on_init(client)
   client.server_capabilities.semanticTokensProvider = nil
 end
 
-local function on_attach(_, bufnr)
+local function on_attach(client, bufnr)
   lsp_keymaps(bufnr)
+
+  -- Set current directory to project root
+  vim.api.nvim_set_current_dir(client.config.root_dir)
 end
 
 M.config = function()
