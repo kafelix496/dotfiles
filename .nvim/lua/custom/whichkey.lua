@@ -117,6 +117,7 @@ M.config = function()
         "<cmd>Gitsigns diffthis HEAD<CR>",
         "Diff",
       },
+      b = { "<cmd>lua Git_backup()<CR>", "Backup" },
     },
 
     f = {

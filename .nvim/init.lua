@@ -4,6 +4,8 @@ require "custom.launch"
 require "custom.keymaps"
 require "custom.options"
 require "custom.autocommands"
+require "custom.git-backup" -- to backup git repo
+
 
 -- lsp
 spec "custom.lsp.mason"
