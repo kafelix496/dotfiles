@@ -27,6 +27,9 @@ function installPackages() {
   # ref: https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package
   brew install neovim
 
+  # Install docker
+  brew install docker docker-compose
+
   # Install colima
   brew install colima
 
@@ -60,6 +63,7 @@ function doIt() {
   # Create config directories
   mkdir -p ~/.config/alacritty
   mkdir -p ~/.config/tmux
+  mkdir -p ~/.docker
 
   installPackages;
 
@@ -75,6 +79,9 @@ function doIt() {
   ln -s ~/dotfiles/.aliases ~/.aliases
   ln -s ~/dotfiles/.exports ~/.exports
   ln -s ~/dotfiles/.profile ~/.zshrc
+
+  # Configure docker
+  echo -e "{\n\t\"cliPluginsExtraDirs\": [\n\t\t\"/opt/homebrew/lib/docker/cli-plugins\"\n\t],\n\t\"currentContext\": \"colima\"\n}" > ~/.docker/config.json
   
   source ~/.zshrc
 }
