@@ -11,8 +11,6 @@ alias c='clear'
 alias tks='t kill-session -t '
 ### aws SSO Login
 alias ssol='aws sso login --profile '
-### Vim Wiki Open
-alias vwo='cd ~/vimwiki && v index.md'
 ### go to previous directory
 alias ..='cd ..'
 
@@ -62,19 +60,3 @@ alias pi='poetry install'
 alias cf="cd ~/code/personal/coding-for-fun-org"
 ### change directory to frontend
 alias fe="cd frontend"
-
-
-# Keen Decision System
-## AWS
-### Keen SSO
-alias ksso='ssol jiyeol.lee'
-
-## Change directory
-### Keen WEB-mida directory
-alias kweb='cd ~/code/keends/web-mida'
-
-## Shell script
-### Keen Start all backend Server
-alias kss='~/code/keends/start_server.sh'
-### Keen Terminate all backend Server
-alias kts='~/code/keends/terminate_server.sh'
