@@ -1,6 +1,6 @@
 
 # Load the shell dotfiles, and then some:
-for file in ~/.{exports,aliases}; do
+for file in ~/.{exports,aliases,extras}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

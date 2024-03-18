@@ -79,6 +79,7 @@ function doIt() {
   ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
   ln -s ~/dotfiles/.aliases ~/.aliases
   ln -s ~/dotfiles/.exports ~/.exports
+  ln -s ~/dotfiles/.extras ~/.extras
   ln -s ~/dotfiles/.profile ~/.zshrc
 
   # Configure docker
