@@ -10,12 +10,38 @@ function installPackages() {
   # Upgrade any already-installed formulae.
   brew upgrade
 
+  # Add additional taps
+  # ref: https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#additional-taps-optional
+  brew tap homebrew/cask-fonts
+  # brew tap homebrew/cask-versions
+
+  # Install fonts for 'Hack Nerd Front Mono'
+  # dependency: brew tap homebrew/cask-fonts
+  brew install --cask font-hack-nerd-font
+
   # Install powerlevel10k
   brew install powerlevel10k
 
+  # Install brave browser
+  brew install --cask brave-browser
+
+  # Install google chrome
+  # brew install --cask google-chrome
+
+  # Install alfred
+  brew install --cask google-drive
+
+  # Install alfred
+  brew install --cask alfred
+
   # Install alacritty
   brew install --cask --no-quarantine alacritty
-  /Users/jiyeol-lee/dotfiles/
+
+  # Install slack
+  brew install --cask slack
+
+  # Install KeePassXC
+  brew install --cask keepassxc
 
   # Install tmux
   # ref1: https://github.com/tmux/tmux/wiki/Installing
@@ -42,10 +68,6 @@ function installPackages() {
   # Install go
   brew install go
 
-  # Install fonts for 'Hack Nerd Front Mono'
-  brew tap homebrew/cask-fonts
-  brew install --cask font-hack-nerd-font
-
   # Install ripgrep
   brew install ripgrep
 
@@ -54,9 +76,6 @@ function installPackages() {
 
   # Install gnu sed
   brew install gnu-sed
-
-  # Install KeePassXC
-  brew install --cask keepassxc
 }
 
 function doIt() {
