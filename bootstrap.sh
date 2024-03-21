@@ -22,6 +22,9 @@ function installPackages() {
   # Install powerlevel10k
   brew install powerlevel10k
 
+  # Install figma
+  brew install --cask figma
+
   # Install brave browser
   brew install --cask brave-browser
 
