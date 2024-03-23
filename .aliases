@@ -32,7 +32,7 @@ alias crl='source ~/.zshrc'
 ### ColimA Start
 alias cas='colima start --cpu 4 --memory 8'
 ### ColimA Start With Kubernetes
-alias caswk='colima start --cpu 4 --memory 8'
+alias caswk='colima start --cpu 4 --memory 8 --kubernetes'
 ### ColimA Terminate
 alias cat='colima stop'
 
@@ -43,15 +43,9 @@ alias grpo='git remote prune origin'
 alias gsu='gh auth switch && gh auth setup-git'
 
 
-# Python
-### Python Create Virtual environment folder
-alias pcv='python3 -m venv .venv'
-### AcTivate Virtual environment
-alias atv='source .venv/bin/activate'
-### DeAcTivate Virtual environment
-alias datv='deactivate'
-### Poetry Install
-alias pi='poetry install'
+# Go
+### Go Run Main
+alias pcv='go run main.go'
 
 
 # Coding For Fun
