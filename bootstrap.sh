@@ -68,6 +68,9 @@ function installPackages() {
   # Install yarn -- must be installed after nodejs
   brew install yarn
 
+  # Install gh
+  brew install gh
+
   # Install go
   brew install go
 
