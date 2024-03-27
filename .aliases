@@ -37,6 +37,17 @@ alias caswk='colima start --cpu 4 --memory 8 --kubernetes'
 alias cat='colima stop'
 
 
+# Docker Compose
+### Docker Compose Up
+alias dcu='docker compose up'
+### Docker Compose Down
+alias dcd='docker compose down --remove-orphans'
+### Docker Compose Soft Purge
+alias dcsp='docker compose down --remove-orphans --rmi all'
+### Docker Compose Hard Purge
+alias dchp='docker compose down --remove-orphans -v --rmi all'
+
+
 # Git
 ### Git Remote Prune Origin
 alias grpo='git remote prune origin'
