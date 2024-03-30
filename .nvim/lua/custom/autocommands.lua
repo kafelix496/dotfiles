@@ -6,20 +6,20 @@ vim.cmd [[
   augroup end
 ]]
 
-local function is_in_vimwiki_directory(filePath)
-  local pattern = "^(.-/?)vimwiki/.+%.md$"
+local function is_in_xxx_directory(directoryName, filePath)
+  local pattern = "^(.-/?)" .. directoryName .. "/.+%.md$"
 
   return string.match(filePath, pattern) ~= nil
 end
 
-local function get_vimwiki_directory(filePath)
-  local pattern = "(.-vimwiki)/"
+local function get_xxx_directory(directoryName, filePath)
+  local pattern = "(.-" .. directoryName .. ")/"
   local match = string.match(filePath, pattern)
   if match then
-    -- Return the match including 'vimwiki'
+    -- Return the match including 'xxx'
     return match
   else
-    -- Return nil if 'vimwiki' is not found in the path
+    -- Return nil if 'xxx' is not found in the path
     return nil
   end
 end
@@ -31,10 +31,14 @@ vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     local filepath = vim.api.nvim_buf_get_name(0)
 
-    if is_in_vimwiki_directory(filepath) then
-      local vimwiki_root = get_vimwiki_directory(filepath)
+    if is_in_xxx_directory("vimwiki", filepath) then
+      local vimwiki_root = get_xxx_directory("vimwiki", filepath)
       -- Set current directory to vimwiki root
       vim.api.nvim_set_current_dir(vimwiki_root)
+    elseif is_in_xxx_directory("dotfiles", filepath) then
+      local dotfiles_root = get_xxx_directory("dotfiles", filepath)
+      -- Set current directory to dotfiles root
+      vim.api.nvim_set_current_dir(dotfiles_root)
     else
       local bufnr = vim.api.nvim_get_current_buf()
       local current_dir = vim.fn.getcwd()
