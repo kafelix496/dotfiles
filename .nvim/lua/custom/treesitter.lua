@@ -18,6 +18,7 @@ M.config = function()
       "vim",
       "python",
       "markdown",
+      "markdown_inline",
       "go",
       "graphql",
       "dockerfile",

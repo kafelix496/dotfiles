@@ -10,6 +10,8 @@ M.init = function()
     [".markdown"] = "markdown",
     [".mdown"] = "markdown",
   }
+  -- -- only treat files with .md extension inside ~/vimwiki/ as vimwiki files
+  -- vim.g.vimwiki_global_ext = 0
 end
 
 return M
