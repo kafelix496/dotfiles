@@ -106,8 +106,8 @@ M.config = function()
       k = { "<cmd>lua require 'gitsigns'.prev_hunk()<CR>", "Prev Hunk" },
       l = { "<cmd>lua require 'gitsigns'.blame_line()<CR>", "Blame" },
       u = {
-        "<cmd>lua require 'gitsigns'.undo_stage_hunk()<CR>",
-        "Undo Stage Hunk",
+        "<cmd>silent !gh auth switch && gh auth setup-git && tmux refresh-client -S<cr>",
+        "gh switch user",
       },
       d = {
         "<cmd>Gitsigns diffthis HEAD<CR>",
