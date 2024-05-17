@@ -23,8 +23,6 @@ M.config = function()
       formatting.golines,
       formatting.gofumpt,
       formatting.goimports,
-      -- prisma
-      formatting.prismaFmt,
     },
     on_attach = function(client, bufnr)
       -- the Buffer will be null in buffers like nvim-tree or new unsaved files
