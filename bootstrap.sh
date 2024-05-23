@@ -32,8 +32,7 @@ function installPackages() {
   # brew install --cask google-chrome
 
   # Install firefox developer edition
-  brew tap homebrew/cask-versions
-  brew install --cask firefox-developer-edition
+  brew install --cask firefox@developer-edition
 
   # Install alfred
   brew install --cask google-drive
@@ -67,7 +66,7 @@ function installPackages() {
   brew install colima
 
   # Install nodejs
-  brew install nodejs@18
+  brew install node@18
 
   # Install yarn -- must be installed after nodejs
   brew install yarn
