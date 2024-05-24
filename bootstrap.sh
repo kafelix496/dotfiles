@@ -66,7 +66,7 @@ function installPackages() {
   brew install colima
 
   # Install nodejs
-  brew install node@18
+  brew install node@20
 
   # Install yarn -- must be installed after nodejs
   brew install yarn
