@@ -25,6 +25,9 @@ function installPackages() {
   # Install figma
   brew install --cask figma
 
+  # Install notion
+  brew install --cask notion
+
   # Install brave browser
   brew install --cask brave-browser
 
