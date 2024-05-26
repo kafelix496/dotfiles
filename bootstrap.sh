@@ -29,10 +29,10 @@ function installPackages() {
   brew install --cask notion
 
   # Install brave browser
-  brew install --cask brave-browser
+  # brew install --cask brave-browser
 
   # Install google chrome
-  # brew install --cask google-chrome
+  brew install --cask google-chrome
 
   # Install firefox developer edition
   brew install --cask firefox@developer-edition
