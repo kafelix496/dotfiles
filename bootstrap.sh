@@ -101,6 +101,7 @@ function doIt() {
   # Configure git
   git config --global user.name "Jiyeol Lee"
   git config --global user.email "ka.felix496@gmail.com"
+  git config --global rerere.enabled true # Enable rerere to make my life easier
 
   # Create symbolic links
   ln -s ~/dotfiles/.tmux.conf ~/.config/tmux/tmux.conf
