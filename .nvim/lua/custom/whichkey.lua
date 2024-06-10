@@ -109,12 +109,10 @@ M.config = function()
         "<cmd>silent !gh auth switch && gh auth setup-git && tmux refresh-client -S<cr>",
         "gh switch user",
       },
-      d = {
-        "<cmd>Gitsigns diffthis HEAD<CR>",
-        "Diff",
-      },
+      d = { "<cmd>Gitsigns diffthis HEAD<CR>", "Diff" },
+      D = { "<cmd>wincmd p | q<CR>", "Go back to original window" },
       b = { "<cmd>lua Git_backup()<CR>", "Backup" },
-      s = { "<cmd>lua Git_force_sync()<CR>", "Backup" },
+      s = { "<cmd>lua Git_force_sync()<CR>", "Force Sync" },
     },
 
     f = {
