@@ -4,6 +4,8 @@ function installPackages() {
   # Install Homebrew.
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+  source ~/.zshrc
+
   # Make sure we’re using the latest Homebrew.
   brew update
 
