@@ -22,6 +22,9 @@ function installPackages() {
   # Install powerlevel10k
   brew install powerlevel10k
 
+  # Install chatgpt
+  brew install --cask chatgpt
+
   # Install figma
   brew install --cask figma
 
