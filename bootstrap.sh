@@ -14,11 +14,9 @@ function installPackages() {
 
   # Add additional taps
   # ref: https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#additional-taps-optional
-  brew tap homebrew/cask-fonts
   # brew tap homebrew/cask-versions
 
   # Install fonts for 'Hack Nerd Front Mono'
-  # dependency: brew tap homebrew/cask-fonts
   brew install --cask font-hack-nerd-font
 
   # Install powerlevel10k
